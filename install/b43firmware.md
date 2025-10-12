@@ -4,8 +4,8 @@ Perform an offline install of the [broadcom wireless firmware](https://wiki.arch
 
 On a separate computer:
 
-1. Download from mirror [b43-fwcutter](https://archlinux.org/packages/core/x86_64/b43-fwcutter/)
-1. Download snapshot and sources of the AUR [b43-firmwave package](https://aur.archlinux.org/packages/b43-firmware)
+1. Download [b43-fwcutter](https://archlinux.org/packages/core/x86_64/b43-fwcutter/) from [mirror here](https://archlinux.org/packages/core/x86_64/b43-fwcutter/download)
+1. Download [snapshot](https://aur.archlinux.org/cgit/aur.git/snapshot/b43-firmware.tar.gz) AND [sources](https://github.com/minios-linux/b43-firmware/releases/download/b43-firmware/broadcom-wl-6.30.163.46.tar.bz2) of the AUR [b43-firmware package](https://aur.archlinux.org/packages/b43-firmware)
 1. Copy to USB
 
 On the target:
