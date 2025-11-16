@@ -7,6 +7,9 @@ source ~/.local/share/omarchy/default/bash/rc
 
 export PATH="$HOME/.local/bin:$PATH"
 
+# default less to smart case insensitive searching + displaying ANSI colours
+export LESS="-iR"
+
 # Add your own exports, aliases, and functions here.
 #
 # Make an alias for invoking commands you use constantly
