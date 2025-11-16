@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -euo pipefail
+
 export PATH=$PATH:$HOME/.local/share/omarchy/bin/
 export OMARCHY_PATH=$HOME/.local/share/omarchy
 
