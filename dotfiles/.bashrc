@@ -22,4 +22,5 @@ export EDITOR=nvim
 # alias p='python'
 alias ll='ls -al'
 alias lg='lazygit'
+alias nv='nvim'
 
