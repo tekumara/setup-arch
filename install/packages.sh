@@ -10,6 +10,7 @@ omarchy-update
 packages=(
   chromium-widevine
   helium-browser-bin
+  lsof
   rsync
   stow
   uv
