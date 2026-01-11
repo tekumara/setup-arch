@@ -7,7 +7,11 @@ return {
       or "make",
     event = "VeryLazy",
     opts = {
-      provider = "copilot",
+      providers = {
+        openai = {
+          model = "gpt-5.2",
+        },
+      },
       selection = {
         hint_display = "none",
       },
