@@ -8,6 +8,7 @@ export OMARCHY_PATH=$HOME/.local/share/omarchy
 omarchy-update
 
 packages=(
+  eget-bin
   chromium-widevine
   helium-browser-bin
   lsof
