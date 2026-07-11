@@ -9,8 +9,6 @@ omarchy-update
 
 packages=(
   eget-bin
-  chromium-widevine
-  helium-browser-bin
   lsof
   rsync
   stow
