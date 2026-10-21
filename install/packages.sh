@@ -8,7 +8,6 @@ export OMARCHY_PATH=$HOME/.local/share/omarchy
 omarchy-update
 
 packages=(
-  eget-bin
   lsof
   rsync
   stow
