@@ -13,7 +13,6 @@ packages=(
   rsync
   stow
   uv
-  zen-browser-bin
 )
 
 packages_git=(
