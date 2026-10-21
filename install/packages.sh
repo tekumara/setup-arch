@@ -2,8 +2,7 @@
 
 set -euo pipefail
 
-export PATH=$PATH:$HOME/.local/share/omarchy/bin/
-export OMARCHY_PATH=$HOME/.local/share/omarchy
+export OMARCHY_PATH=/usr/share/omarchy
 
 omarchy-update
 
