@@ -12,11 +12,11 @@ packages=(
   rsync
   stow
   uv
+  zmx
 )
 
 packages_git=(
   quickemu-git
-  zmx-git
 )
 
 yay -S --answerclean None --answerdiff None --needed --noconfirm "${packages[@]}"
