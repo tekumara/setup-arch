@@ -18,7 +18,14 @@ if ! grep -qxF 'Include = /etc/pacman.d/rex.conf' /etc/pacman.conf; then
   printf '%s\n' 'Include = /etc/pacman.d/rex.conf' | sudo tee -a /etc/pacman.conf >/dev/null
 fi
 
+# Refresh all package databases and upgrade through Omarchy.
 omarchy-update
+
+# The update can be declined; don't fall back to an AUR package if Rex is unavailable.
+if ! pacman -Si rex/rex >/dev/null 2>&1; then
+  echo "Rex is unavailable in the pacman databases. Run omarchy-update and approve the update." >&2
+  exit 1
+fi
 
 packages=(
   lsof
@@ -32,7 +39,7 @@ packages_git=(
   quickemu-git
 )
 
-yay -Syu --answerclean None --answerdiff None --needed --noconfirm "${packages[@]}"
+yay -S --answerclean None --answerdiff None --needed --noconfirm "${packages[@]}"
 
 # install even if uptodate in order to fetch latest commits
 yay -S --answerclean None --answerdiff None --noconfirm "${packages_git[@]}"
