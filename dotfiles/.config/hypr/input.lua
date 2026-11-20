@@ -1,6 +1,13 @@
 -- Keep only your personal input overrides here. Uncommented settings below
 -- replace Omarchy's defaults.
 
+-- Invert the mouse wheel direction (natural scrolling).
+hl.config({
+  input = {
+    natural_scroll = true,
+  },
+})
+
 -- Keyboard layout and options.
 -- See https://wiki.hypr.land/Configuring/Basics/Variables/#input
 -- hl.config({
